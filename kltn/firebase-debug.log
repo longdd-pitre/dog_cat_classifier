@@ -1,0 +1,34 @@
+[debug] [2023-03-09T05:22:07.595Z] ----------------------------------------------------------------------
+[debug] [2023-03-09T05:22:07.597Z] Command:       /home/longnguyen18/.nvm/versions/node/v19.7.0/bin/node /home/longnguyen18/.nvm/versions/node/v19.7.0/bin/firebase serve --only hosting
+[debug] [2023-03-09T05:22:07.597Z] CLI Version:   11.24.1
+[debug] [2023-03-09T05:22:07.598Z] Platform:      linux
+[debug] [2023-03-09T05:22:07.598Z] Node Version:  v19.7.0
+[debug] [2023-03-09T05:22:07.598Z] Time:          Thu Mar 09 2023 12:22:07 GMT+0700 (Indochina Time)
+[debug] [2023-03-09T05:22:07.598Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-09T05:22:07.701Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-09T05:22:07.702Z] > authorizing via signed-in user (dent.for.works@gmail.com)
+[debug] [2023-03-09T05:22:07.702Z] [iam] checking project fir-rtc-f0039 for permissions ["firebase.projects.get"]
+[debug] [2023-03-09T05:22:07.703Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-f0039:testIamPermissions [none]
+[debug] [2023-03-09T05:22:07.703Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-f0039:testIamPermissions x-goog-quota-user=projects/fir-rtc-f0039
+[debug] [2023-03-09T05:22:07.703Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-f0039:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-09T05:22:08.891Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-f0039:testIamPermissions 200
+[debug] [2023-03-09T05:22:08.892Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-rtc-f0039:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-09T05:22:08.894Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-f0039 [none]
+[debug] [2023-03-09T05:22:09.216Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-f0039 200
+[debug] [2023-03-09T05:22:09.216Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-f0039 {"projectId":"fir-rtc-f0039","projectNumber":"890415408460","displayName":"FirebaseRTC","name":"projects/fir-rtc-f0039","resources":{"hostingSite":"fir-rtc-f0039"},"state":"ACTIVE","etag":"1_1396e055-1a17-4ff2-9b38-c009dc4ea931"}
+[debug] [2023-03-09T05:22:09.224Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-rtc-f0039/sites 
+[debug] [2023-03-09T05:22:10.246Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-rtc-f0039/sites 200
+[debug] [2023-03-09T05:22:10.247Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-rtc-f0039/sites {"sites":[{"name":"projects/fir-rtc-f0039/sites/fir-rtc-f0039","defaultUrl":"https://fir-rtc-f0039.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-03-09T05:22:10.247Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-f0039/webApps/-/config [none]
+[debug] [2023-03-09T05:22:10.923Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-f0039/webApps/-/config 200
+[debug] [2023-03-09T05:22:10.923Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-f0039/webApps/-/config {"projectId":"fir-rtc-f0039","storageBucket":"fir-rtc-f0039.appspot.com","apiKey":"AIzaSyCnfXS6oqOnuhVZwN4eSykYaooKXEdZV0U","authDomain":"fir-rtc-f0039.firebaseapp.com","messagingSenderId":"890415408460"}
+[debug] [2023-03-09T05:22:10.941Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-f0039 [none]
+[debug] [2023-03-09T05:22:11.199Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-f0039 200
+[debug] [2023-03-09T05:22:11.199Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-rtc-f0039 {"projectId":"fir-rtc-f0039","projectNumber":"890415408460","displayName":"FirebaseRTC","name":"projects/fir-rtc-f0039","resources":{"hostingSite":"fir-rtc-f0039"},"state":"ACTIVE","etag":"1_1396e055-1a17-4ff2-9b38-c009dc4ea931"}
+[info] i  hosting[fir-rtc-f0039]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[fir-rtc-f0039]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [09/Mar/2023:05:22:15 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Mar/2023:05:22:15 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Mar/2023:05:29:50 +0000] "GET /firebase/5.9.3/firebase-app.js HTTP/1.1" 404 169 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Mar/2023:05:29:50 +0000] \"GET /firebase/5.9.3/firebase-app.js HTTP/1.1\" 404 169 \"http://localhost:3000/\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Mar/2023:05:29:50 +0000] "GET /firebase/5.9.3/firebase-firestore.js HTTP/1.1" 404 175 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Mar/2023:05:29:50 +0000] \"GET /firebase/5.9.3/firebase-firestore.js HTTP/1.1\" 404 175 \"http://localhost:3000/\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [09/Mar/2023:05:29:50 +0000] "GET /firebase/init.js HTTP/1.1" 404 155 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Mar/2023:05:29:50 +0000] \"GET /firebase/init.js HTTP/1.1\" 404 155 \"http://localhost:3000/\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\""}}
